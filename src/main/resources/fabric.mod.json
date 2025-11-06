@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "nogl",
+  "version": "${version}",
+  "name": "nogl",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nogl/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "kotleni.nogl.client.NoglClient"
+    ],
+    "main": [
+      "kotleni.nogl.Nogl"
+    ]
+  },
+  "mixins": [
+    "nogl.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
