@@ -201,6 +201,7 @@ public class AMixin {
         try {
             Thread.currentThread().setName("Render thread");
             //RenderSystem.initRenderThread();
+            logger.info("Before new MinecraftClient(runArgs)");
             minecraftClient = new MinecraftClient(runArgs);
         } catch (GlException glException) {
             Util.shutdownExecutors();
@@ -216,6 +217,7 @@ public class AMixin {
         }
 
         MinecraftClient minecraftClient2 = minecraftClient;
+        logger.info("Before minecraftClient.run()");
         minecraftClient.run();
 
         try {

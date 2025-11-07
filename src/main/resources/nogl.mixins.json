@@ -10,7 +10,8 @@
     "RenderSystemMixin",
     "MinecraftClientMixin",
     "WindowFramebufferMixin",
-    "GameRendererMixin"
+    "GameRendererMixin",
+    "SpriteLoaderMixin"
   ],
   "injectors": {
     "defaultRequire": 1
