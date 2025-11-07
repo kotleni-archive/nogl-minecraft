@@ -96,11 +96,11 @@ class StubGpuDevice : GpuDevice {
     }
 
     override fun getBackendName(): String? {
-        return "v1.0"
+        return "stub"
     }
 
     override fun getVersion(): String? {
-        TODO("Not yet implemented")
+        return "v1.0"
     }
 
     override fun getRenderer(): String? {
@@ -108,7 +108,7 @@ class StubGpuDevice : GpuDevice {
     }
 
     override fun getMaxTextureSize(): Int {
-        return 0
+        return 1024
     }
 
     override fun getUniformOffsetAlignment(): Int {

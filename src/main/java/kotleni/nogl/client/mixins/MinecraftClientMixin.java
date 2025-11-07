@@ -43,7 +43,7 @@ public class MinecraftClientMixin {
 
     @Inject(
             method = "render",
-            at = @At("HEAD"),
+            at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;executePendingTasks()V"),
             cancellable = true
     )
     private void render(boolean tick, CallbackInfo ci) {
