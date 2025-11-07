@@ -34,6 +34,7 @@ import net.minecraft.util.profiling.jfr.FlightProfiler;
 import net.minecraft.util.profiling.jfr.InstanceType;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.jetbrains.annotations.Nullable;
+import org.lwjgl.glfw.GLFWErrorCallbackI;
 import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -8,7 +8,9 @@
   "client": [
     "AMixin",
     "RenderSystemMixin",
-    "MinecraftClientMixin"
+    "MinecraftClientMixin",
+    "WindowFramebufferMixin",
+    "GameRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

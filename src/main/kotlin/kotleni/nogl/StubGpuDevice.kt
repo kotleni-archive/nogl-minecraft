@@ -16,7 +16,7 @@ import java.util.function.Supplier
 
 class StubGpuDevice : GpuDevice {
     override fun createCommandEncoder(): CommandEncoder? {
-        TODO("Not yet implemented")
+        return StubCommandEncoder()
     }
 
     override fun createTexture(
@@ -112,7 +112,7 @@ class StubGpuDevice : GpuDevice {
     }
 
     override fun getUniformOffsetAlignment(): Int {
-        return 0
+        return 32
     }
 
     override fun precompilePipeline(
